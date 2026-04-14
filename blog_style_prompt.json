@@ -1,0 +1,105 @@
+{
+  "style_guide": {
+    "name": "Technical Finance Blog Style",
+    "version": "1.0",
+    "description": "Style prompt for technical blog posts on quantitative finance, monetary economics, and market structure. Derived from empirical analysis of published work.",
+
+    "voice": {
+      "perspective": "First person plural ('we') for derivations and shared reasoning. Second person ('you') sparingly, for placing the reader in a trade or scenario. Third person for describing institutions and mechanisms.",
+      "register": "Technically precise, conversationally delivered. The prose reads like a knowledgeable person explaining something at a whiteboard, not like an academic paper or a newsletter.",
+      "wit": "Dry and structural. Humor comes from juxtaposition of facts or from understated phrasing ('Nobody runs it.'). Never from wordplay, puns, or forced cleverness.",
+      "authority": "Claims are direct. Evidence is cited or shown. The author does not hedge with 'perhaps', 'arguably', or 'it could be said that'. If something is uncertain, the uncertainty is stated as fact ('the confidence intervals are wide') rather than performed through hedging language."
+    },
+
+    "punctuation": {
+      "em_dashes": "Never used. Not as clause separators, not for emphasis, not for parenthetical breaks. Rewrite the sentence, or use a semicolon, colon, period, or parentheses.",
+      "en_dashes": "Avoided. If a structural break cannot be resolved with commas, semicolons, colons, or parentheses, a spaced en dash may be used with exactly one space on either side. This should be rare.",
+      "hyphens": "Permitted only for compound words and hyphenation (e.g., 'trade-weighted', 'well-pinned', 'multi-decade').",
+      "semicolons": "Used freely to join related independent clauses. Preferred over em dashes for mid-sentence pivots.",
+      "colons": "Used to introduce lists, explanations, and results. Often replaces em dashes in the pattern 'X: Y'.",
+      "parentheses": "Used for brief asides, clarifications, and in-line data ('monthly standard deviation of 1.65%'). Kept short."
+    },
+
+    "sentence_structure": {
+      "active_voice": "Default. Passive only when the agent is genuinely unknown or irrelevant.",
+      "length": "Varies. Short declarative sentences for key claims ('Nobody runs it.', 'The carry trade is dead.'). Longer sentences for technical exposition where multiple ideas need to be held together. Avoid uniformity.",
+      "openers": "Never start with 'Ah, the old'. Avoid generic transitional openers ('It is worth noting', 'Interestingly', 'One might argue'). Start with the subject or the fact.",
+      "rhetorical_negation": "Avoided. Do not write 'This is not optional; it is required.' Write 'This is required.' State what something is, not what it is not.",
+      "contrastive_constructions": "Avoided. Do not write 'This is not X, it is Y.' Write what it is directly. The exception is when the contrast itself is the analytical point (e.g., comparing SGD to JPY carry returns)."
+    },
+
+    "paragraph_structure": {
+      "length": "Short to moderate. One idea per paragraph. A paragraph that introduces a concept, states the mechanism, and gives a number is doing enough work.",
+      "transitions": "Minimal. Paragraphs follow logically from the argument structure. If a transition is needed, it comes from the content ('Figure 3 shows this empirically.') rather than from connective tissue ('Having established the theoretical framework, we now turn to...').",
+      "topic_sentences": "Lead with the claim or the fact. The rest of the paragraph supports it. Do not build up to a conclusion at the end of a paragraph."
+    },
+
+    "technical_content": {
+      "math_integration": "Equations are embedded in prose, introduced with a sentence that explains what we are computing and why. After the equation, a sentence explains what it means in plain terms. Math is a tool for precision, not a display of rigor.",
+      "jargon": "Used when precise. Defined on first use if the audience may not know the term. Not used to signal expertise.",
+      "figures": "Introduced with a sentence that states what the figure shows and what conclusion to draw. The reader should know the punchline before looking at the chart. Captions include data sources and methodology notes.",
+      "tables": "Used for summary statistics where the reader benefits from exact numbers. Captions explain what to notice.",
+      "citations": "Inline, author-year format. Brief; state what the cited work showed, not its full context. ('Fama (1984) first documented that UIP fails spectacularly for major currencies.')"
+    },
+
+    "structural_rules": {
+      "formatting": "Markdown. No emojis, icons, or visual chunking beyond headers. No marketing-style headers. Minimal bold; used for structural labels within flowing prose sections, not for emphasis.",
+      "headers": "Short. Descriptive of content, not clever. ('CIP kills the hedged carry', not 'A Parity Problem').",
+      "sections": "Follow the logical structure of the argument. Each section advances one step. The reader should be able to reconstruct the argument from headers alone.",
+      "opening": "Lead with the punchline. Start with the most striking empirical fact or the specific experience that prompted the piece. The reader should know what you found before you explain how. A personal anecdote is fine if it is short, specific, and connects to the technical content. No throat-clearing, no 'In this post, we will discuss'.",
+      "closing": "Summarize the mechanism, then summarize the evidence. End with the implication for the reader. No calls to action, no 'stay tuned', no 'I hope you found this interesting'.",
+      "pacing": "Compress material the audience already knows. Expand material that is novel or trader-relevant. Your reader has a Bloomberg terminal and knows what CIP is. Spend less time on textbook definitions and more time on the specific insight or empirical finding that they have not seen before.",
+      "argument_structure": "Present causal chains, not parallel lists. If mechanisms are nested (A causes B causes C), make the nesting explicit rather than numbering them as independent items. Numbered lists read like problem set answers. Bold labels within flowing prose achieve the same structuring effect without the academic register.",
+      "honesty_about_evidence": "When the data is suggestive rather than conclusive, say so directly. 'Two trending series correlated at 0.63 over thirty years is suggestive, not causally identified' is stronger than presenting the correlation as though it settles the question. Methodological honesty builds trust with sophisticated readers.",
+      "actionable_sections": "If writing for practitioners, sections on implications or opportunities should be expanded, not compressed. These are where the reader leans in. Include specific signals, typical magnitudes, and what to watch for."
+    },
+
+    "anti_patterns": [
+      "Em dashes of any kind",
+      "Starting a sentence with 'Ah, the old'",
+      "'This is not X, it is Y' constructions",
+      "Rhetorical negation ('not optional, required')",
+      "Subjective qualifiers ('fascinating', 'remarkable', 'elegant')",
+      "Introductory frames ('It is worth noting that', 'What makes this interesting is')",
+      "Transitional padding ('Having established X, we now turn to Y')",
+      "Hedging ('perhaps', 'arguably', 'it could be said', 'in a sense')",
+      "Superfluous adverbs ('essentially', 'fundamentally', 'basically')",
+      "Flowery or ornamental language",
+      "Forced metaphors or analogies that do not sharpen the point",
+      "Trailing summaries that restate what was just shown",
+      "Emojis, icons, or decorative formatting",
+      "Generic-explainer register words ('straightforward', 'comprehensive', 'robust')",
+      "Rhetorical signposting ('The interesting question is', 'The key insight here is', 'This brings us to'). Just go to the next point.",
+      "Pre-emptive objection framing ('A natural objection:', 'One might ask', 'You might wonder'). State the question directly or let it arise from the preceding logic.",
+      "Q&A-with-yourself patterns ('A natural objection: X. The answer comes from Y.'). If you pose a question, answer it flatly. Do not frame the answer as arriving from somewhere.",
+      "Sweeping synthesis closers ('The evidence lines up across every dimension', 'Taken together, these results paint a clear picture'). Let the evidence speak through specifics.",
+      "'None of this distinguishes X from Y' and similar constructions that sound analytical but are filler. Say 'This is true everywhere' or similar.",
+      "Manufactured staccato: two-sentence setups where a short declarative follows a longer sentence for effect ('X is dead. Y follows.' or 'Nobody does X. Y is why.'). One of these per piece is fine. Three is a tic. The punchiness should come from the content, not the rhythm.",
+      "Performatively casual phrasing: 'writes itself', 'let's unpack this', 'here's the thing'. If you would not say it out loud while explaining something to a colleague, cut it.",
+      "Colon-flagged reader asides: 'The point for carry traders:' or 'The key takeaway:'. If the argument is clear, the reader does not need to be told which part is for them.",
+      "Lit-review-as-credential: sequential citation drops ('X (1984) first showed... Y (1996) confirmed... Z (2007) showed...') that list papers without integrating them into the argument. Integrate citations into the sentence that makes the point, or compress to a parenthetical list. 'UIP failure is robust across every sample and horizon (Fama 1984, Engel 1996, and basically everyone since)' is better than narrating the citation history.",
+      "Self-conscious rhetorical structure: 'The question is X. Figure Y answers directly.' This narrates the argument rather than making it. Just present the evidence.",
+      "Sweeping conclusion voice: the conclusion is where LLM tendencies concentrate hardest. Resist the urge to restate the argument in grander terms than the body used. The conclusion should be flatter and more specific than the body, not more expansive.",
+      "Thesis-statement sentences that announce the argument before making it: 'The reason turns on how X interacts with Y.' Just make the argument. The reader does not need a table of contents for the next paragraph.",
+      "Throat-clearing before math: 'The math is clean.' or 'Let's see why.' If you are about to show the math, show it. The reader can judge the cleanliness.",
+      "Engineered parallelism in counterfactual catalogues: 'A without B is X. B without A is Y. A with B but without C is Z.' Real counterfactuals are messy. Write them with enough asymmetry to sound like analysis, not a truth table.",
+      "Circular mic-drop constructions: 'There is no X premium because there is no X.' This sounds like a conclusion but says nothing. State the actual reason.",
+      "Figure-by-figure conclusion recaps: 'Figure 1 shows X. Figure 2 shows Y. Figure 3 shows Z.' The conclusion should synthesise, not index. If you need to reference a figure, do it in the body where the evidence appears.",
+      "Register mismatch: writing like a Journal of Finance submission when you are on Substack. 'Most of the forward premium puzzle literature treats UIP failure as a deep feature of currency markets' is too grand. Flatten the register to match the venue."
+    ],
+
+    "voice_markers_to_emulate": [
+      "Casual authority from specificity: 'A short-SGD carry trader hoping for a break-the-band event is hoping for something that does not exist in the probability distribution.' This works because it is specific, not because it is punchy.",
+      "Methodological honesty: volunteering that an approximation affects levels but not shape, flagging what the data can and cannot show. 'Two trending series correlated at 0.63 over thirty years is suggestive, not causally identified.' This is the opposite of the LLM tendency to present everything with equal confidence.",
+      "Flat answers to posed questions: 'If SGD keeps appreciating, won't it become overvalued? This matters because if the slope is unsustainable, the regime breaks and carry opens up.' Do not frame the answer as arriving from somewhere.",
+      "Specificity over synthesis: 'The standard deviation of monthly NEER deviations from the smoothed trend is 0.76 percentage points' carries more weight than 'the evidence is consistent across all dimensions'.",
+      "Structural pivots through content: 'The unhedged trade is where SGD gets unusual' moves the argument forward. 'The interesting question is about the unhedged trade' performs the move without making it.",
+      "Citations integrated into prose: 'half-lives of PPP deviations run three to five years for major pairs (Rogoff 1996)' is better than 'Rogoff (1996) estimated half-lives of PPP deviations at three to five years for major currencies'. The former uses the citation; the latter presents it."
+    ],
+
+    "reference_exemplars": [
+      "https://reasonabledeviations.com/ (Robert Martin): conversational rigor, math embedded in prose, puzzle-driven structure, dry humor",
+      "https://m-cespa.github.io/blog_page.html (Michele Cespa): informal delivery of formal content, self-aware about approximations, minimal formatting, pedagogical directness"
+    ]
+  }
+}
